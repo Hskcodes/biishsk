@@ -15,7 +15,7 @@ def is_enabled(value, default):
 #main variables
 API_ID = int(environ.get('API_ID', '25582726'))
 API_HASH = environ.get('API_HASH', '558df3cdc4820fd2de0950656e8112f3')
-BOT_TOKEN = environ.get('BOT_TOKEN', '6875897174:AAHk5TaIJ4BmghL3bC2GkVE93A_JitLrCNI')
+BOT_TOKEN = environ.get('BOT_TOKEN', '6875897174:AAH9dp4uwpJSK5u_dY2swRVPqdCZydyf2qY')
 
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '831859341').split()]
 USERNAME = environ.get('USERNAME', "https://telegram.me/hskdashing")
@@ -26,16 +26,16 @@ DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://zbpon:zbpon@cluster0.a
 
 DATABASE_NAME = environ.get('DATABASE_NAME', "zbpon")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
-LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-1001949498981'))
+LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-1002033299978'))
 QR_CODE = environ.get('QR_CODE', 'https://graph.org/file/ccb9db43e62a2e524928e.jpg')
 START_IMG = environ.get('START_IMG', 'https://graph.org/file/4dad0cc16f190468454ee.jpg')
 BIN_CHANNEL = int(environ.get('BIN_CHANNEL','-1002033299978'))
-DELETE_CHANNELS = int(environ.get('DELETE_CHANNELS','-1001905670346'))
+DELETE_CHANNELS = int(environ.get('DELETE_CHANNELS','-1002033299978'))
 URL = environ.get('URL', 'mytestbot-jvdfhbj.com')
 STICKERS_IDS = ('CAACAgQAAxkBAAEK99dlfC7LDqnuwtGRkIoacot_dGC4zQACbg8AAuHqsVDaMQeY6CcRojME').split()
 FILE_AUTO_DEL_TIMER = int(environ.get('FILE_AUTO_DEL_TIMER', '600'))
-IS_VERIFY = is_enabled('IS_VERIFY', False)
-LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '-1001949498981'))
+IS_VERIFY = is_enabled('IS_VERIFY', True)
+LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '-1002033299978'))
 TUTORIAL = environ.get("TUTORIAL", "https://t.me/Movie_Url_link_downloader/17")
 VERIFY_IMG = environ.get("VERIFY_IMG", "https://graph.org/file/1669ab9af68eaa62c3ca4.jpg")
 SHORTENER_API = environ.get("SHORTENER_API", "5bb6e402dd86fb8774690a5f4a65d2a2c0c04877")
